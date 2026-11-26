@@ -1,0 +1,417 @@
+/* Modal */
+.modal-container .modal-content {
+  border-radius: 16px;
+  border: none;
+}
+
+.modal-body-custom {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+/* Header */
+.modal-header-custom {
+  border-bottom: 1px solid #eee;
+}
+
+.modal-title-custom {
+  margin: 0;
+  font-weight: 600;
+}
+
+.modal-subtitle {
+  font-size: 12px;
+  color: var(--palette-text-secondary);
+}
+
+/* Card */
+.form-card {
+  background: var(--palette-background);
+  border: 1px solid #eee;
+  border-radius: 14px;
+  padding: 16px;
+}
+
+.form-card .card-header {
+  text-align: start;
+}
+
+/* Card header */
+.card-header h6 {
+  font-weight: 600;
+}
+
+.card-header p {
+  font-size: 12px;
+  color: var(--palette-text-secondary);
+}
+
+/* Upload box */
+.upload-box {
+  border: 2px dashed #dfe3e8;
+  border-radius: 12px;
+  padding: 30px;
+  text-align: center;
+  background: #fafbfc;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.upload-box:hover {
+  background: #f4f6f9;
+  border-color: var(--nav-item-root-active-color);
+}
+
+/* Preview */
+.preview-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+}
+
+.preview-container {
+  max-width: 120px;
+  display: inline-flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px;
+  background-color: var(--nav-item-root-active-bg);
+  /* border: 0.5px solid var(--nav-item-root-active-color); */
+  border-radius: 8px;
+  position: relative;
+}
+
+.preview-container.removing {
+  opacity: 0.6;
+  pointer-events: none;
+}
+
+.preview-grid .image-cell-wrapper {
+  width: 100%;
+  height: 100%;
+}
+
+/* Remove button */
+.remove-btn {
+  width: 20px;
+  height: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 14px;
+  font-weight: 600;
+  background: var(--palette-text-secondary);
+  color: var(--palette-common-white);
+  border-radius: 50%;
+  position: absolute;
+  top: 0%;
+  right: 0%;
+  transform: translate(50%, -50%);
+  z-index: 100;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+/* Hover effect */
+.remove-btn:hover {
+  transform: translate(50%, -50%) scale(0.9);
+  background: var(--palette-error-main);
+}
+
+.preview-img {
+  width: 100%;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+/* File name */
+.file-name {
+  font-size: 12px;
+  color: var(--palette-text-primary);
+  text-align: center;
+  margin-bottom: 0px;
+  word-break: break-word;
+}
+
+.upload-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 5px;
+}
+
+.upload-icon {
+  font-size: 30px;
+}
+
+/* Input */
+.input-field {
+  height: 42px;
+  border-radius: 8px;
+  font-size: 14px;
+}
+
+/* ============= REACT SELECT CSS ============= */
+/* Container */
+.react-select-container {
+  font-size: 14px;
+}
+
+/* Control (input box) */
+.react-select__control {
+  min-height: 42px !important;
+  border-radius: 8px !important;
+  border: 1px solid #ddd !important;
+  box-shadow: none !important;
+}
+
+.react-select__control:hover {
+  border-color: #bbb !important;
+}
+
+/* Focus */
+.react-select__control--is-focused {
+  border-color: var(--nav-item-root-active-color) !important;
+  box-shadow: 0 0 0 1px var(--nav-item-root-active-color) !important;
+}
+
+/* Dropdown */
+.react-select__menu {
+  border-radius: 10px !important;
+  overflow: hidden;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08) !important;
+}
+
+/* Option */
+.react-select__option {
+  padding: 10px !important;
+  font-size: 14px;
+}
+
+.react-select__option--is-focused {
+  background: #f4f6f9 !important;
+}
+
+.react-select__option--is-selected {
+  background: var(--nav-item-root-active-bg) !important;
+  color: var(--nav-item-root-active-color) !important;
+}
+
+/* Single value */
+.react-select__single-value {
+  color: var(--palette-text-primary) !important;
+}
+
+/* Placeholder */
+.react-select__placeholder {
+  color: var(--palette-text-secondary) !important;
+}
+
+/* =========== CK EDITOR CSS ============= */
+/* ===== MAIN CONTAINER ===== */
+.editor-container {
+  border: 1px solid #e5e7eb;
+  border-radius: 12px;
+  background: var(--palette-background);
+  overflow: hidden;
+}
+
+/* ===== TOOLBAR ===== */
+.ck.ck-editor__top .ck-sticky-panel .ck-sticky-panel__content {
+  border: none;
+}
+
+.ck.ck-toolbar {
+  border: 1px solid var(--nav-item-root-active-bg) !important;
+  background: var(--palette-common-white) !important;
+  padding: 6px 10px !important;
+}
+
+/* Toolbar buttons */
+.ck.ck-button {
+  border-radius: 6px !important;
+  transition: all 0.2s ease;
+}
+
+.ck.ck-button:hover {
+  background: #f1f5f9 !important;
+}
+
+/* Active button */
+.ck.ck-button.ck-on {
+  background: var(--nav-item-root-active-bg) !important;
+  color: var(--nav-item-root-active-color) !important;
+}
+
+/* ===== DROPDOWN (Paragraph) ===== */
+.ck.ck-dropdown__panel {
+  border-radius: 10px !important;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08) !important;
+  border: none !important;
+}
+
+/* ===== EDITOR AREA ===== */
+.ck-editor__editable {
+  min-height: 160px !important;
+  padding: 12px !important;
+  border: none !important;
+  font-size: 14px;
+  color: var(--palette-text-primary);
+}
+
+/* Focus state */
+.ck.ck-editor__editable.ck-focused {
+  outline: none !important;
+  box-shadow: inset 0 0 0 1px var(--nav-item-root-active-color);
+}
+
+/* Placeholder */
+.ck.ck-editor__editable>p {
+  margin: 0;
+}
+
+/* ===== SCROLL FIX ===== */
+.ck-editor__main {
+  max-height: 250px;
+  overflow-y: auto;
+}
+
+/* ===== LIST STYLE ===== */
+.ck-content ul {
+  padding-left: 20px;
+}
+
+.ck-content li {
+  margin-bottom: 4px;
+}
+
+
+/* ================ ORDER DETAIL MODAL CSS =============== */
+/* HEADER */
+.order-header h5 {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.order-header p {
+  font-size: 13px;
+  color: var(--palette-text-secondary);
+  margin: 0;
+}
+
+/* ITEMS */
+.order-items {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.order-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.order-item-left {
+  display: flex;
+  gap: 12px;
+  align-items: center;
+}
+
+.item-img {
+  width: 45px;
+  height: 45px;
+  border-radius: 10px;
+  background: #e6f4f1;
+}
+
+.discount-info {
+  margin-top: 10px;
+  font-size: 13px;
+  color: #1b7a3a;
+  background: #e6f4ea;
+  padding: 6px 10px;
+  border-radius: 6px;
+  font-weight: 500;
+}
+
+/* SUMMARY */
+.order-summary {
+  margin-top: 15px;
+  border-top: 1px dashed #eee;
+  padding-top: 10px;
+}
+
+.order-summary div {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 6px;
+}
+
+.order-summary .total {
+  font-weight: 600;
+  font-size: 15px;
+}
+
+/* TIMELINE */
+.timeline {
+  position: relative;
+  padding-left: 20px;
+}
+
+.timeline-item {
+  position: relative;
+}
+
+.timeline-dot {
+  width: 10px;
+  height: 10px;
+  background: var(--palette-primary-main);
+  border-radius: 50%;
+  position: absolute;
+  top: 6px;
+  left: 0;
+}
+
+.timeline-item:not(:last-child) .timeline-line {
+  width: 2px;
+  height: 60%;
+  position: absolute;
+  top: 25px;
+  left: 4px;
+  background: var(--palette-primary-main);
+}
+
+.timeline-content {
+  padding-bottom: 15px;
+  margin-left: 20px;
+}
+
+/* CUSTOMER */
+.customer-block {
+  display: flex;
+  gap: 10px;
+  /* align-items: center; */
+}
+
+.avatar {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background: #e6f4f1;
+}
+
+/* ================= IMAGE MODAL CSS ================ */
+.image-grid {
+  /* height: 100px; */
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(120px, 1fr));
+  gap: 12px;
+}
+
+.image-grid .image-cell-wrapper {
+  width: 100%;
+  height: 100%;
+}

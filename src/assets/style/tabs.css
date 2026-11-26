@@ -1,0 +1,46 @@
+/* Wrapper */
+.tabs-wrapper {
+  background: #fff;
+  border-radius: 12px;
+  margin-bottom: 15px;
+}
+
+/* Remove default bootstrap look */
+.order-tabs-custom {
+  height: 50px;
+  flex-wrap: nowrap;
+  gap: 20px;
+  padding: 0px 15px;
+  overflow-x: auto;
+}
+
+/* Tab item */
+.order-tabs-custom .nav-link {
+  border: none !important;
+  background: transparent !important;
+  color: var(--palette-text-secondary);
+  font-weight: 600;
+  padding: 10px 16px;
+  position: relative;
+}
+
+/* Active tab */
+.order-tabs-custom .nav-link.active {
+  color: var(--palette-text-primary);
+}
+
+/* Underline (SS wala) */
+.order-tabs-custom .nav-link.active::after {
+  content: "";
+  position: absolute;
+  bottom: 0px;
+  left: 0;
+  width: 100%;
+  height: 2.5px;
+  background: var(--palette-text-primary);
+}
+
+/* Hover */
+.order-tabs-custom .nav-link:hover {
+  color: var(--palette-text-primary);
+}

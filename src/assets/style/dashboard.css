@@ -1,0 +1,79 @@
+.dashboard-root {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+/* Welcome */
+.welcome-card {
+  background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
+  border-radius: 16px;
+  padding: 30px;
+  color: #fff;
+}
+
+/* Card */
+.stats-card {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: var(--palette-background);
+  border-radius: 14px;
+  padding: 24px;
+  margin-bottom: 20px;
+  box-shadow: 0 0 2px 0 rgba(145 158 171 / 20%), 0 12px 24px -4px rgba(145 158 171 / 12%);
+}
+
+/* Text */
+.stats-title {
+  font-size: 14px;
+  color: var(--palette-text-primary);
+}
+
+.stats-value {
+  font-size: 28px;
+  font-weight: 600;
+  margin: 10px 0;
+}
+
+.stats-change {
+  font-size: 13px;
+}
+
+.stats-change.up {
+  color: #00a76f;
+}
+
+.stats-change.down {
+  color: #ff5630;
+}
+
+/* Mini chart */
+.mini-chart {
+  display: flex;
+  align-items: flex-end;
+  gap: 4px;
+}
+
+.mini-chart span {
+  width: 6px;
+  height: 20px;
+  background: #00a76f;
+  border-radius: 2px;
+}
+
+.mini-chart span:nth-child(2) {
+  height: 30px;
+}
+
+.mini-chart span:nth-child(3) {
+  height: 15px;
+}
+
+.mini-chart span:nth-child(4) {
+  height: 35px;
+}
+
+.mini-chart span:nth-child(5) {
+  height: 25px;
+}
